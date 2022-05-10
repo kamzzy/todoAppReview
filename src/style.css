@@ -1,0 +1,122 @@
+main {
+  background-color: rgb(246, 246, 241);
+  padding: 1% 0;
+}
+
+.container {
+  background-color: #fff;
+  width: auto;
+  height: auto;
+  box-shadow: 0 0 2px 3px rgb(245, 244, 244);
+  margin: 10% 15%;
+}
+
+h4 {
+  display: block;
+  height: 28px;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+.fa-solid {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+form {
+  border-bottom: 0.6px solid rgb(216, 216, 216);
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0;
+  position: relative;
+  border-top: 0.6px solid rgb(216, 216, 216);
+  border-right: none;
+  border-left: none;
+}
+
+.todoInput {
+  border: transparent;
+  font-style: italic;
+  width: 85%;
+  padding: 3%;
+}
+
+.todoBtn {
+  position: relative;
+  right: 3.2%;
+  border: transparent;
+  background-color: white;
+}
+
+.clear {
+  text-align: center;
+  padding: 2%;
+  border-bottom: 0.6px solid rgb(216, 216, 216);
+  color: rgb(168, 162, 162);
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container ul li {
+  padding: 10px;
+  height: 48px;
+  background-color: #fff;
+  border-bottom: 0.6px solid rgb(216, 216, 216);
+}
+
+.done input {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.tick {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #333;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tick::before {
+  content: '✓';
+  font-size: 20px;
+  display: none;
+}
+
+.done .tick::before {
+  display: inline;
+}
+
+.todo {
+  font-size: 18px;
+  padding: 0 10px;
+  border: transparent;
+}
+
+.todo:focus {
+  outline: none;
+}
+
+.fa-trash-can {
+  display: inline;
+  position: absolute;
+  cursor: pointer;
+  border: transparent;
+  right: 18%;
+}
+
+.clear-btn {
+  border: none;
+  padding: 12px;
+  background-color: #fff;
+  cursor: pointer;
+}
